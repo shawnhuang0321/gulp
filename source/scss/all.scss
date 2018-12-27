@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'content';
+
+@mixin container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+div.container {
+  @include container();
+
+  h1 {
+    color: $success;
+    font-size: 26px;
+  }
+
+  p {
+    color: $danger;
+  }
+
+  span {
+    font-size: 26px;
+    color: $primary;
+  }
+}
